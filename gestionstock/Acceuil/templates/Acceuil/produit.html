@@ -1,0 +1,18 @@
+{% extends 'Acceuil/modules/head.html'%}
+{% load static %}
+
+<!-- navbar -->
+
+{% block body %}
+<body>
+
+		<h1>Liste des produits : </h1>
+		<br>
+		{% for produits in produits %}
+		<h3><a>{{ produits.nom }}</a></h3>
+		<p>{{ produits.ID_produit}}</p>
+		<br>
+		{% endfor %}
+
+</body>
+{% endblock %}
